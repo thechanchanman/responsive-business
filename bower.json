@@ -1,0 +1,18 @@
+{
+  "name": "responsive-business-website",
+  "description": "An example corporate website",
+  "main": "index.html",
+  "authors": [
+    "thechanchanman <anastasiospaliouras@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
