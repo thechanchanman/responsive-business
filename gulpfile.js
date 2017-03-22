@@ -27,7 +27,7 @@ const scripts = {
 
 const styles = {
   main : source + '/scss/styles.scss',
-  in : source + '/scss/**/*.scss',
+  in : [source + '/scss/**/*.scss', '!' + source + '/scss/**/_*.scss'],
   out : dest + '/css'
 };
 
