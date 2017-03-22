@@ -11,6 +11,179 @@
     <meta name="description" content="A startup company website built using Foundation">
   </head>
   <body>
-
+    <!-- Header section -->
+    <header class="startup-header">
+      <div class="contain-to-grid startup-top-bar">
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name startup-name">
+              <h1><a href="#">Startup</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon">
+              <a href="#"><span>Menu</span></a>
+            </li>
+          </ul> <!-- .title-area -->
+          <section class="top-bar-section">
+            <ul class="right">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li class="has-form log-in"><a href="#" class="button secondary round">Log In</a></li>
+              <li class="has-form log-in"><a href="#" class="secondary round">Sign Up</a></li>
+            </ul>
+          </section> <!-- .top-bar-section -->
+        </nav> <!-- .top-bar -->
+      </div> <!-- .contain-to-grid .startup-top-bar -->
+      <div class="panel startup-hero">
+        <div class="row">
+          <h2 class="hero-title">Stay Cool and be Awesome</h2>
+          <p class="hero-lead">The most awesome web application in the galaxy.</p>
+        </div>
+        <div class="row"><a href="#" class="button success round">Sign Up</a></div>
+      </div> <!-- .panel .startup-hero -->
+    </header>
+    <!-- Main section -->
+    <div class="startup-body">
+      <!-- Features section -->
+      <div class="startup-features">
+        <div class="row">
+          <div class="medium-6 columns">
+            <div class="row">
+              <div class="small-3 medium-4 columns">
+                <figure><img src="img/analytics.png" alt="" height="128" width="128"></figure>
+              </div>
+              <div class="small-9 medium-8 columns">
+                <h4>Easy</h4>
+                <p>This web application is super easy to use. No complicated setup. It just works out of the box.</p>
+              </div>
+            </div>
+          </div> <!-- .medium-6 -->
+          <div class="medium-6 columns">
+            <div class="row">
+              <div class="small-3 medium-4 columns">
+                <figure><img src="img/clock.png" alt="" height="128" width="128"></figure>
+              </div>
+              <div class="small-9 medium-8 colums">
+                <h4>Fast</h4>
+                <p>This web application runs in a blink of eye. There is no other application that is on par with out application in term of speed.</p>
+              </div>
+            </div>
+          </div> <!-- .medium-6 -->
+        </div> <!-- .row -->
+        <div class="row">
+          <div class="medium-6 columns">
+            <div class="row">
+              <div class="small-3 medium-4 columns">
+                <figure><img src="img/target.png" alt="" height="128" width="128"></figure>
+              </div>
+              <div class="small-9 medium-8 colums">
+                <h4>Secure</h4>
+                <p>Your data is encrypted with the latest Kryptonian technology. It will never be shared to anyone. Rest assured, your data is totally safe.</p>
+              </div>
+            </div>
+          </div> <!-- .medium-6 -->
+          <div class="medium-6 columns">
+            <div class="row">
+              <div class="small-3 medium-4 columns">
+                <figure><img src="img/bubbles.png" alt="" height="128" width="128"></figure>
+              </div>
+              <div class="small-9 medium-8 colums">
+                <h4>Awesome</h4>
+                <p>It's simply the most awesome web application and make you the coolest person in the galaxy. Enough said.</p>
+              </div>
+            </div>
+          </div> <!-- .medium-6 -->
+        </div> <!-- .row -->
+      </div> <!-- .startup-features -->
+      <!-- Testimonial section -->
+      <div class="startup-testimonial">
+        <div class="row">
+          <ul class="testimonail-list" data-orbit>
+            <li data-orbit-slide="testimonial-1">
+              <div>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum aliquam autem, modi, a, quis pariatur deserunt veritatis provident laboriosam hic ratione doloribus recusandae consequatur nulla asperiores aliquid sint quasi?</blockquote>
+                <figure>
+                  <img src="img/mystery.png" alt="" height="128" width="128">
+                  <figcaption>John Doe</figcaption>
+                </figure>
+              </div>
+            </li>
+            <li data-orbit-slide="testimonial-2">
+              <div>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime quaerat fugit atque, ipsa non libero, nisi vero placeat error qui voluptate eveniet rem consequuntur vitae quisquam dicta ut deserunt id earum minus cupiditate, nam fuga repellendus!</blockquote>
+                <figure>
+                  <img src="img/mystery.png" alt="" height="128" width="128">
+                  <figcaption>Jane Doe</figcaption>
+                </figure>
+              </div>
+            </li>
+          </ul> <!-- .testimonail-list -->
+        </div> <!-- .row -->
+      </div> <!-- .startup-testimonial -->
+      <!-- Pricing section -->
+      <div class="startup-pricing">
+        <div class="row">
+          <div class="medium-4 columns">
+            <ul class="pricing-table pricing-basic">
+              <li class="title">Basic</li>
+              <li class="price">$10
+                <smal>/month</smal>
+              </li>
+              <li class="description">Perfect for personal use</li>
+              <li class="bullet-item">1GB Storage</li>
+              <li class="bullet-item">1 User</li>
+              <li class="bullet-item">24/7 Support</li>
+              <li class="cta-button"><a href="#" class="button success round">Sign Up</a></li>
+            </ul>
+          </div> <!-- .medium-4 -->
+          <div class="medium-4 columns">
+            <ul class="pricing-table pricing-team">
+              <li class="title">Team</li>
+              <li class="price">$50
+                <smal>/month</smal>
+              </li>
+              <li class="description">For a small team</li>
+              <li class="bullet-item">50GB Storage</li>
+              <li class="bullet-item">Up to 10 users</li>
+              <li class="bullet-item">24/7 Support</li>
+              <li class="cta-button"><a href="#" class="button success round">Sign Up</a></li>
+            </ul>
+          </div> <!-- .medium-4 -->
+          <div class="medium-4 columns">
+            <ul class="pricing-table pricing-enterprise">
+              <li class="title">Enterprise</li>
+              <li class="price">$300
+                <smal>/month</smal>
+              </li>
+              <li class="description">For large corporation</li>
+              <li class="bullet-item">Unlimited Storage</li>
+              <li class="bullet-item">Unlimited Users</li>
+              <li class="bullet-item">24/7 Priority Support</li>
+              <li class="cta-button"><a href="#" class="button success round">Sign Up</a></li>
+            </ul>
+          </div> <!-- .medium-4 -->
+        </div> <!-- .row -->
+      </div> <!-- .startup-pricing -->
+    </div> <!-- .startup-body -->
+    <!-- Footer Section -->
+    <footer class="startup-footer">
+      <div class="row footer-nav">
+        <ul class="secondary-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+        <ul class="social-nav">
+          <li class="foundicon-facebook"><a href="#">Facebook</a></li>
+          <li class="foundicon-twitter"><a href="#">Twitter</a></li>
+        </ul>
+      </div> <!-- .footer-nav -->
+      <div class="row footer-copyright">
+        <p>Copyright 2017 Super Awesome App. All right reserved.</p>
+      </div> <!-- .footer-copyright -->
+    </footer>
   </body>
 </html>

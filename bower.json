@@ -12,7 +12,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3",
+    "foundation-icons": "*"
+  }
 }
