@@ -2,6 +2,10 @@
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
+@import 'config';
+@import '../../components/foundation/scss/normalize.scss';
+@import '../../components/foundation-icons/foundation_icons_social/sass/social_foundicons.scss';
+
 // Behold, here are all the Foundation components.
 @import '../../components/foundation/scss/foundation/components/grid';
 @import '../../components/foundation/scss/foundation/components/accordion';

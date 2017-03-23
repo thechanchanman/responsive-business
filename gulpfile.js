@@ -19,15 +19,19 @@ const dest = 'public';
 const source = 'src';
 
 const scripts = {
-  // *** probably this section will be removed later ***
-  // all scripts except vendor scripts (usually *.min.js files)
+  foundation : [
+    'components/foundation/js/vendor/jquery.js',
+    'components/foundation/js/foundation/foundation.js',
+    'components/foundation/js/foundation/foundation.topbar.js',
+    'components/foundation/js/foundation/foundation.orbit.js'
+  ],
   in : source + '/js/**/*.js',
   out : dest + '/js',
 };
 
 const styles = {
-  main : source + '/scss/styles.scss',
-  in : [source + '/scss/**/*.scss', '!' + source + '/scss/**/_*.scss'],
+  main : [source + '/scss/**/*.scss', '!' + source + '/scss/**/_*.scss'],
+  in : source + '/scss/**/*.scss',
   out : dest + '/css'
 };
 
@@ -38,13 +42,20 @@ const htmlPages = {
 /********************************************
 ** Script tasks
 ********************************************/
+gulp.task('foundation-js', function(){
+  gulp.src(scripts.foundation)
+  .pipe(plumber())
+  .pipe(concat('foundation.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest(scripts.out))
+  .pipe(browserSync.reload({ stream:true }));
+});
+
 gulp.task('scripts', function(){
   gulp.src(scripts.in)
   .pipe(plumber())
   // optional --- initializing sourcemaps
   .pipe(sourcemaps.init())
-  // adding .min suffix to file name
-  // .pipe(rename({suffix:'.min'}))
   // minify
   .pipe(concat('main.js'))
   .pipe(uglify())
@@ -58,7 +69,7 @@ gulp.task('scripts', function(){
 ** Compass / Sass tasks
 ********************************************/
 gulp.task('sass', function(){
-  gulp.src(styles.in)
+  gulp.src(styles.main)
   .pipe(plumber())
   .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: 'expanded' }))
@@ -108,6 +119,7 @@ gulp.task('watch', function(){
 // or php for php pages
 //*** use webpack or scripts for javascript files
 gulp.task('default', [
+  'foundation-js',
   'scripts',
   'sass',
   'html',

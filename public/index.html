@@ -7,7 +7,8 @@
     <title>Business Website</title>
     <link rel="apple-touch-icon" href="img/apple-icon.png">
     <link rel="shortcut icon" href="img/favicon.png">
-	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round" type="text/css">
+	  <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="A startup company website built using Foundation">
   </head>
@@ -104,7 +105,7 @@
               <div>
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eum aliquam autem, modi, a, quis pariatur deserunt veritatis provident laboriosam hic ratione doloribus recusandae consequatur nulla asperiores aliquid sint quasi?</blockquote>
                 <figure>
-                  <img src="img/mystery.png" alt="" height="128" width="128">
+                  <img src="img/mystery.png" class="avatar" alt="" height="128" width="128">
                   <figcaption>John Doe</figcaption>
                 </figure>
               </div>
@@ -113,7 +114,7 @@
               <div>
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime quaerat fugit atque, ipsa non libero, nisi vero placeat error qui voluptate eveniet rem consequuntur vitae quisquam dicta ut deserunt id earum minus cupiditate, nam fuga repellendus!</blockquote>
                 <figure>
-                  <img src="img/mystery.png" alt="" height="128" width="128">
+                  <img src="img/mystery.png" class="avatar" alt="" height="128" width="128">
                   <figcaption>Jane Doe</figcaption>
                 </figure>
               </div>
@@ -178,13 +179,24 @@
           <li><a href="#">Privacy</a></li>
         </ul>
         <ul class="social-nav">
-          <li class="foundicon-facebook"><a href="#">Facebook</a></li>
-          <li class="foundicon-twitter"><a href="#">Twitter</a></li>
+          <li><a href="#" class="foundicon-facebook">Facebook</a></li>
+          <li><a href="#" class="foundicon-twitter">Twitter</a></li>
         </ul>
       </div> <!-- .footer-nav -->
       <div class="row footer-copyright">
         <p>Copyright 2017 Super Awesome App. All right reserved.</p>
       </div> <!-- .footer-copyright -->
     </footer>
+    <script src="js/foundation.min.js" charset="utf-8"></script>
+    <script>
+      $(document).foundation({
+        orbit: {
+          timer_speed: 3000,
+          pause_on_hover: true,
+          resume_on_mouseover: true,
+          slide_number: false
+        }
+      });
+    </script>
   </body>
 </html>
